@@ -1,4 +1,4 @@
-FROM node:20-alpine
+FROM node:19.5.0-alpine
 LABEL name="Sepid Landing"
 RUN mkdir -p /app
 WORKDIR /app
