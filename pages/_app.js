@@ -9,16 +9,16 @@ const App = ({ Component, pageProps }) => {
   // default theme setup
 
   // import google font css
-  const pf = theme.fonts.font_family.primary;
-  const sf = theme.fonts.font_family.secondary;
-  const [fontcss, setFontcss] = useState();
-  useEffect(() => {
-    fetch(
-      `https://fonts.googleapis.com/css2?family=${pf}${
-        sf ? "&family=" + sf : ""
-      }&display=swap`
-    ).then((res) => res.text().then((css) => setFontcss(css)));
-  }, [pf, sf]);
+  // const pf = theme.fonts.font_family.primary;
+  // const sf = theme.fonts.font_family.secondary;
+  // const [fontcss, setFontcss] = useState();
+  // useEffect(() => {
+  //   fetch(
+  //     `https://fonts.googleapis.com/css2?family=${pf}${
+  //       sf ? "&family=" + sf : ""
+  //     }&display=swap`
+  //   ).then((res) => res.text().then((css) => setFontcss(css)));
+  // }, [pf, sf]);
 
   // google tag manager (gtm)
   const tagManagerArgs = {
@@ -37,7 +37,7 @@ const App = ({ Component, pageProps }) => {
     <>
       <Head>
         {/* google font css */}
-        <link
+        {/* <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
           crossOrigin="true"
@@ -46,7 +46,7 @@ const App = ({ Component, pageProps }) => {
           dangerouslySetInnerHTML={{
             __html: `${fontcss}`,
           }}
-        />
+        /> */}
         {/* responsive meta */}
         <meta
           name="viewport"
