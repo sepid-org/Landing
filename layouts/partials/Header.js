@@ -1,8 +1,10 @@
 import Logo from "@components/Logo";
 import config from "@config/config.json";
 import menu from "@config/menu.json";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import logo from "public/images/CUBE.png"
 import React, { useState } from "react";
 
 const Header = () => {
@@ -15,16 +17,14 @@ const Header = () => {
   // states declaration
   const [navOpen, setNavOpen] = useState(false);
 
-  // logo source
-  const { logo } = config.site;
   const { enable, label, link } = config.nav_button;
 
   return (
     <header className="header">
       <nav className="navbar container">
         {/* logo */}
-        <div className="order-0">
-          <Logo src={logo} />
+        <div className="order-0 w-32">
+          <Image src={logo} alt="" />
         </div>
 
         {/* navbar toggler */}
@@ -52,11 +52,12 @@ const Header = () => {
         {/* Menu */}
         <div
           id="nav-menu"
+          style={{width:"700px"}}
           className={`order-3 md:order-1 ${
             navOpen ? "max-h-[1000px]" : "max-h-0"
           }`}
         >
-          <ul className="navbar-nav block w-full md:flex md:w-auto lg:space-x-2">
+          <ul className="navbar-nav block w-full items-center md:flex md:w-auto lg:space-x-2">
             {main.map((menu, i) => (
               <React.Fragment key={`menu-${i}`}>
                 {menu.hasChildren ? (
@@ -108,13 +109,13 @@ const Header = () => {
             )}
           </ul>
         </div>
-        {enable && (
+        {/* {enable && (
           <div className="d-flex order-1 ml-auto hidden min-w-[200px] items-center justify-end md:ml-0 md:flex md:order-2">
             <Link className="btn btn-primary z-0 py-[14px]" href={link} rel="">
               {label}
             </Link>
           </div>
-        )}
+        )} */}
       </nav>
     </header>
   );

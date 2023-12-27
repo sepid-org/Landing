@@ -3,6 +3,7 @@ import config from "@config/config.json";
 import menu from "@config/menu.json";
 import social from "@config/social.json";
 import { markdownify } from "@lib/utils/textConverter";
+import seepid from "../../public/images/Artboard 1.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -34,14 +35,13 @@ const Footer = () => {
           <div className="md-12 sm:col-6 lg:col-3">
             <Link href="/" aria-label="Bigspring">
               <Image
-                src={config.site.logo}
-                width={config.site.logo_width}
-                height={config.site.logo_height}
+                src={seepid}
                 alt=""
+                className="w-40  h-10"
               />
             </Link>
             {markdownify(footer_content, "p", "mt-3 mb-6")}
-            <Social source={social} className="social-icons mb-8" />
+            {/* <Social source={social} className="social-icons mb-8" /> */}
           </div>
         </div>
         {/* copyright */}
