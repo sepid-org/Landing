@@ -1,5 +1,6 @@
 import config from "@config/config.json";
 import { plainify } from "@lib/utils/textConverter";
+import { Container } from "@mui/material";
 import Footer from "@partials/Footer";
 import Header from "@partials/Header";
 import Head from "next/head";
@@ -91,7 +92,9 @@ const Base = ({
       </Head>
       <Header />
       {/* main site */}
+      <Container maxWidth={"lg"}>
       <main>{children}</main>
+      </Container>
       <Footer />
     </>
   );

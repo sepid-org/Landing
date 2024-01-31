@@ -4,7 +4,7 @@ import menu from "@config/menu.json";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import logo from "public/images/CUBE.png"
+import logo from "public/images/2.png"
 import React, { useState } from "react";
 
 const Header = () => {
@@ -74,6 +74,7 @@ const Header = () => {
                           <Link
                             href={child.url}
                             className="nav-dropdown-link block"
+                           
                           >
                             {child.name}
                           </Link>
@@ -89,6 +90,7 @@ const Header = () => {
                       className={`nav-link block ${
                         router.asPath === menu.url ? "nav-link-active" : ""
                       }`}
+                      style={{fontSize:"14px"}}
                     >
                       {menu.name}
                     </Link>
@@ -102,6 +104,7 @@ const Header = () => {
                   className="btn btn-primary z-0 py-[14px]"
                   href={link}
                   rel=""
+                  style={{fontSize:"14px"}}
                 >
                   {label}
                 </Link>

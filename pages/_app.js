@@ -4,6 +4,7 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import TagManager from "react-gtm-module";
 import "styles/style.scss";
+import "../public/fonts/fonts.css"
 
 const App = ({ Component, pageProps }) => {
   // default theme setup
@@ -48,6 +49,7 @@ const App = ({ Component, pageProps }) => {
           }}
         /> */}
         {/* responsive meta */}
+        <link href="../public/fonts/fonts.css" rel="stylesheet" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5"

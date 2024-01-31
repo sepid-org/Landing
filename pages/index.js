@@ -20,8 +20,8 @@ const Home = ({ frontmatter }) => {
         <div className="container">
           <div className="row text-center">
             <div className="mx-auto lg:col-10">
-              <h1 className="font-primary font-bold">{banner.title}</h1>
-              <p className="mt-4">{markdownify(banner.content)}</p>
+              <h1 className="font-primary font-bold" style={{fontSize:"64px"}}>{banner.title}</h1>
+              <p className="mt-4" style={{fontSize:"18px"}}>{markdownify(banner.content)}</p>
               {banner.button.enable && (
                 <Link
                   className="btn btn-primary mt-4"
@@ -155,7 +155,7 @@ const Home = ({ frontmatter }) => {
       </section>
 
       {/* Cta */}
-      <Cta cta={call_to_action} />
+      {/* <Cta cta={call_to_action} /> */}
     </Base>
   );
 };
