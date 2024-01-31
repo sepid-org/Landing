@@ -15,8 +15,8 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "",
-      "primary_type": ""
+      "primary": "iranyekan",
+      "primary_type": "lalezar"
     },
     "font_size": {
       "base": "10",
