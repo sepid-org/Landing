@@ -1,7 +1,7 @@
 ---
 banner:
-  title: Let us solve your critical website development challenges
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus
+  title: پلتفرم سپید
+  content: نسل بعدی تولید و عرضه محتوا
   image: /images/banner-art.svg
   button:
     label: "Contact Us"
@@ -9,26 +9,26 @@ banner:
 
 # feature
 feature: 
-  title: Something You Need To Know
+  title: ویژگی‌ها
   features:
-  - name: "Clean Code"
+  - name: "ابزار"
     icon: "/images/code.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Object Oriented"
+    content: " امکان استفاده از تمام ابزار های تولید و ارائه محتوا مانند عکس ، ویدئو ، صدا ، متن ، بازی (minigame) ، لینک"
+  - name: "رایگان"
     icon: "/images/oop.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "24h Service"
+    content: "هزینه راه اندازی و نگهداری وبسایت مادام رایگان خواهد بود"
+  - name: "ذخیره سازی"
     icon: "/images/user-clock.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Value for Money"
+    content: " شما علاوه بر در دسترس قرار دادن محتوا به صورت عادی میتوانید کلاس یا وبینار هم برگزار کنید"
+  - name: "کپی رایت"
     icon: "/images/love.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Faster Response"
+    content: " شما میتوانید هر محتوایی که دارید را ذخیره سازی کنید"
+  - name: "اتاق آنلاین"
     icon: "/images/speedometer.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Cloud Support"
+    content: "از تمام محتواهای شما در این بستر محافظت میشود"
+  - name: "آمار"
     icon: "/images/cloud.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+    content: "تحلیل موقعیت و رفتارمخاطبان"
 
 # services
 services:
@@ -76,7 +76,7 @@ services:
 
 # workflow
 workflow: 
-  title: "Experience the best workflow with us"
+  title: "(یک متن تبلیغاتی که دارم روش فکر میکنم)"
   image: "/images/banner.svg"
   description: ""
 
