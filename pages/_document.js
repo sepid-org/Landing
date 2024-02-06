@@ -5,7 +5,7 @@ const Document = () => {
   // destructuring items from config object
   const { favicon } = config.site;
   return (
-    <Html lang="fa" dir="rtl" >
+    <Html lang="fa" dir="rtl">
       <Head>
         {/* favicon */}
         <link
@@ -14,6 +14,7 @@ const Document = () => {
           sizes="32x32"
           href={favicon}
         />
+
         {/* theme meta */}
         <meta name="theme-name" content="next-boilerplate" />
         <meta name="msapplication-TileColor" content="#000000" />

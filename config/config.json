@@ -1,12 +1,12 @@
 {
   "site": {
-    "title": "Bigspring Light Nextjs",
-    "base_url": "/",
-    "favicon": "/images/favicon.png",
+    "title": "سپید",
+    "base_url": "https://sepid.org/",
+    "favicon": "images/favicon_io/favicon-32x32.png",
     "logo": "/images/logo.png",
     "logo_width": "200",
     "logo_height": "48",
-    "logo_text": "Bigspring Light"
+    "logo_text": "Sepid"
   },
 
   "settings": {

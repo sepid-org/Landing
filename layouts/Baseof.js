@@ -1,6 +1,6 @@
 import config from "@config/config.json";
 import { plainify } from "@lib/utils/textConverter";
-import { Container } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import Footer from "@partials/Footer";
 import Header from "@partials/Header";
 import Head from "next/head";
@@ -24,38 +24,35 @@ const Base = ({
       <Head>
         {/* title */}
         <title>
-          {plainify(
-            meta_title ? meta_title : title ? title : config.site.title
-          )}
+          {config.site.title}
         </title>
-
+        
         {/* canonical url */}
-        {canonical && <link rel="canonical" href={canonical} itemProp="url" />}
+        {/* {canonical && <link rel="canonical" href={canonical} itemProp="url" />} */}
 
         {/* noindex robots */}
-        {noindex && <meta name="robots" content="noindex,nofollow" />}
-
+        {/* {noindex && <meta name="robots" content="noindex,nofollow" />} */}
         {/* meta-description */}
         <meta
           name="description"
-          content={plainify(description ? description : meta_description)}
+          content="نسل جدید تولید محتوا"
         />
 
         {/* author from config.json */}
-        <meta name="author" content={meta_author} />
+        {/* <meta name="author" content={meta_author} /> */}
 
         {/* og-title */}
-        <meta
+        {/* <meta
           property="og:title"
           content={plainify(
             meta_title ? meta_title : title ? title : config.site.title
           )}
-        />
+        /> */}
 
         {/* og-description */}
         <meta
           property="og:description"
-          content={plainify(description ? description : meta_description)}
+          content="نسل جدید تولید محتوا"
         />
         <meta property="og:type" content="website" />
         <meta
@@ -64,37 +61,36 @@ const Base = ({
         />
 
         {/* twitter-title */}
-        <meta
+        {/* <meta
           name="twitter:title"
           content={plainify(
             meta_title ? meta_title : title ? title : config.site.title
           )}
-        />
+        /> */}
 
         {/* twitter-description */}
         <meta
           name="twitter:description"
           content={plainify(description ? description : meta_description)}
         />
-
         {/* og-image */}
         <meta
           property="og:image"
-          content={`${base_url}${image ? image : meta_image}`}
+          content={`${base_url}${image}`}
         />
 
         {/* twitter-image */}
-        <meta
+        {/* <meta
           name="twitter:image"
           content={`${base_url}${image ? image : meta_image}`}
         />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary_large_image" /> */}
       </Head>
       <Header />
       {/* main site */}
-      <Container maxWidth={"lg"}>
+      <Box sx={{padding:"0"}}>
       <main>{children}</main>
-      </Container>
+      </Box>
       <Footer />
     </>
   );
