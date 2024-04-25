@@ -5,16 +5,12 @@
       "url": "/"
     },
     {
-      "name": "قیمت",
-      "url": "/pricing"
-    },
-    {
-      "name": "تماس با ما",
-      "url": "/contact"
+      "name": "محصولات",
+      "url": "/products"
     },
     {
       "name": "درباره ما",
-      "url": "/faq"
+      "url": "/aboutus"
     }
   ],
   "footer": [
@@ -53,7 +49,7 @@
       "menu": [
         {
           "text": "تماس با ما",
-          "url": "/faq"
+          "url": "/aboutus"
         },
         {
           "text": "Terms & Conditions",

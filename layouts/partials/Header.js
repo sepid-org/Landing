@@ -21,41 +21,14 @@ const Header = () => {
 
   return (
     <header className="header">
-      <nav className="navbar container">
+      <nav style={{display:"flex" , flexDirection:"row" , justifyContent:"space-around", alignItems:"center"}}>
+      
         {/* logo */}
-        <div className="order-0 w-32">
+        <div className="order-0 w-64">
           <Image src={logo} alt="" />
         </div>
-
-        {/* navbar toggler */}
-        <button
-          id="show-button"
-          className="order-2 flex cursor-pointer items-center md:hidden md:order-1"
-          onClick={() => setNavOpen(!navOpen)}
-        >
-          {navOpen ? (
-            <svg className="h-6 fill-current" viewBox="0 0 20 20">
-              <title>Menu Open</title>
-              <polygon
-                points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
-                transform="rotate(45 10 10)"
-              />
-            </svg>
-          ) : (
-            <svg className="h-6 fill-current" viewBox="0 0 20 20">
-              <title>Menu Close</title>
-              <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z" />
-            </svg>
-          )}
-        </button>
-
-        {/* Menu */}
         <div
-          id="nav-menu"
-          style={{width:"700px"}}
-          className={`order-3 md:order-1 ${
-            navOpen ? "max-h-[1000px]" : "max-h-0"
-          }`}
+        style={{width:"400px"}}
         >
           <ul className="navbar-nav block w-full items-center md:flex md:w-auto lg:space-x-2">
             {main.map((menu, i) => (
@@ -111,15 +84,33 @@ const Header = () => {
               </li>
             )}
           </ul>
-        </div>
-        {/* {enable && (
-          <div className="d-flex order-1 ml-auto hidden min-w-[200px] items-center justify-end md:ml-0 md:flex md:order-2">
-            <Link className="btn btn-primary z-0 py-[14px]" href={link} rel="">
-              {label}
-            </Link>
-          </div>
-        )} */}
+        </div>   
+        <div>
+        <button style={{background:"blue" , color:"white", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
+        همکاری با ما        </button>
+        </div>   
+        <button
+          id="show-button"
+          className="order-2 flex cursor-pointer items-center md:hidden md:order-1"
+          onClick={() => setNavOpen(!navOpen)}
+        >
+          {navOpen ? (
+            <svg className="h-6 fill-current" viewBox="0 0 20 20">
+              <title>Menu Open</title>
+              <polygon
+                points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+                transform="rotate(45 10 10)"
+              />
+            </svg>
+          ) : (
+            <svg className="h-6 fill-current" viewBox="0 0 20 20">
+              <title>Menu Close</title>
+              <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z" />
+            </svg>
+          )}
+        </button>
       </nav>
+      
     </header>
   );
 };
