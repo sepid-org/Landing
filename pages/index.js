@@ -16,7 +16,7 @@ const Home = ({ frontmatter }) => {
   return (
     <Base title={title}>
       {/* Banner */}
-      <section className="section pb-[50px]">
+      {/* <section className="section pb-[50px]">
         <div className="container">
           <div className="row text-center">
             <div className="mx-auto lg:col-10">
@@ -42,10 +42,37 @@ const Home = ({ frontmatter }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <div id="cloud_body">
+      <div id="background-wrap">
+    <div class="x1">
+        <div class="cloud"></div>
+    </div>
+    <div class="x2">
+        <div class="cloud"></div>
+    </div>
+    <div class="x3">
+        <div class="cloud"></div>
+    </div>
+
+    <div class="x4">
+        <div class="cloud"></div>
+    </div>
+
+    <div class="x5">
+        <div class="cloud"></div>
+    </div>
+</div>
+ <div className="row text-center" style={{position:"absolute", top:"50%", left:"30%", width:"700px", color:"snow" , zIndex:"0"}}>
+            <div className="mx-auto lg:col-10">
+              <h1 className="font-primary font-bold" style={{fontSize:"64px", zIndex:"-2" , color:"snow"}}>{banner.title}</h1>
+              <p className="mt-4" style={{fontSize:"18px"}}>{markdownify(banner.content)}</p>
+      </div>
+      </div>
+      </div>
 
       {/* Features */}
-      <section className="section bg-theme-light">
+      {/* <section className="section bg-theme-light">
         <div className="container">
           <div className="text-center">
             <h2>{markdownify(feature.title)}</h2>
@@ -73,7 +100,7 @@ const Home = ({ frontmatter }) => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* services */}
       {/* {services.map((service, index) => {
@@ -137,7 +164,7 @@ const Home = ({ frontmatter }) => {
   );
 })} */}
       {/* workflow */}
-      <section className="section pb-0">
+      {/* <section className="section pb-0">
         <div className="mb-8 text-center">
           {markdownify(
             workflow.title,
@@ -152,7 +179,7 @@ const Home = ({ frontmatter }) => {
           width={1920}
           height={296}
         />
-      </section>
+      </section> */}
 
       {/* Cta */}
       {/* <Cta cta={call_to_action} /> */}

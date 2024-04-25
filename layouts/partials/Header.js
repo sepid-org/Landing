@@ -86,8 +86,9 @@ const Header = () => {
           </ul>
         </div>   
         <div>
-        <button style={{background:"blue" , color:"white", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
-        همکاری با ما        </button>
+        <button style={{background:"rgb(10 168 167 / var(--tw-text-opacity))" , color:"white", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
+        همکاری با ما        
+        </button>
         </div>   
         <button
           id="show-button"

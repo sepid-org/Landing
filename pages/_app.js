@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import TagManager from "react-gtm-module";
 import "styles/style.scss";
 import "../public/fonts/fonts.css"
+import "../styles/cloudanimetion.css";
 
 const App = ({ Component, pageProps }) => {
   // default theme setup
