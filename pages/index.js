@@ -110,8 +110,8 @@ const Home = ({ frontmatter }) => {
   );
 })} */}
 <div style={{display:"flex" , flexDirection:"row" , justifyContent:"space-around", alignItems:"start"}}>
-<div style={{marginTop:"140px",display:"flex" , flexDirection:"column" , justifyContent:"space-between" , height:"100vh"}}>
-<div>
+<div style={{marginTop:"0px",display:"flex" , flexDirection:"column" , justifyContent:"center" , height:"100vh"}}>
+<div style={{marginBottom:"80px"}}>
 <h2 className="font-bold leading-[40px]" style={{width:"350px", fontSize:"35px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
             <p className="mt-4 mb-2" style={{width:"400px"}}>orem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae lorem nec urna faucibus bibendum. Nam scelerisque, orci ac vehicula malesuada, justo elit blandit velit, nec gravida risus </p>
     <div> 
@@ -123,7 +123,8 @@ const Home = ({ frontmatter }) => {
         </button>
         </div>
 </div>
-  <div style={{width:"100%" , height:"0.05px" , background:"black"}}></div>
+<div>
+<div style={{width:"100%" , height:"0.05px" , background:"black" , marginBottom:"30px"}}></div>
  
   <div style={{display:"flex" , flexDirection:"row" , justifyContent:"space-between"}}>
     <p className="font-bold leading-[40px]" style={{fontSize:"25px"}} >
@@ -131,7 +132,7 @@ const Home = ({ frontmatter }) => {
     </p>
     <div>
       <div style={{paddingRight:"70px" , marginBottom:"20px"}}>
-      <button style={{color:"white" , background:"#1C1678", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
+      <button style={{color:"white" , marginInline:"20px" , background:"#1C1678", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
         همکاری با ما        
         </button>
         <button style={{color:"white" , background:"#7BC9FF", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
@@ -139,7 +140,7 @@ const Home = ({ frontmatter }) => {
         </button>
       </div>
       <div>
-      <button style={{color:"snow" , background:"#A3FFD6", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
+      <button style={{color:"snow" ,marginInline:"20px", background:"#A3FFD6", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
         همکاری با ما        
         </button>
         <button style={{color:"white" , background:"#8576FF", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
@@ -148,13 +149,15 @@ const Home = ({ frontmatter }) => {
       </div>
     </div>
   </div>
+</div>
+  
 
   </div>
   <div style={{display:"flex" , flexDirection:"column" , justifyContent:"flex-start" , alignItems:"center"}}>
-    <Image style={{maxWidth:"600px" , height:"400px" ,  borderRadius:"13px",  border:"black solid 3px"}} src={pic1} />
-    <div style={{display:"flex" , flexDirection:"row" , justifyContent:"space-between" , alignItems:"center" , width:"600px" , margin:"20px"}}>
-    <Image style={{maxWidth:"260px" , height:"400px" , borderRadius:"13px" , border:"black solid 3px"}} src={pic1} />
-    <Image style={{maxWidth:"260px" , height:"400px" , borderRadius:"13px" , border:"black solid 3px"}}    src={pic1}/>
+    <Image style={{maxWidth:"600px" , height:"350px" ,  borderRadius:"13px",  border:"black solid 3px"}} src={pic1} />
+    <div style={{display:"flex" , flexDirection:"row" , justifyContent:"space-between" , alignItems:"center" , width:"600px" , margin:"10px"}}>
+    <Image style={{maxWidth:"290px" , height:"400px" , borderRadius:"13px" , border:"black solid 3px"}} src={pic1} />
+    <Image style={{maxWidth:"290px" , height:"400px" , borderRadius:"13px" , border:"black solid 3px"}}    src={pic1}/>
     </div>
   </div>
 </div>
