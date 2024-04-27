@@ -109,12 +109,12 @@ const Home = ({ frontmatter }) => {
     </section>
   );
 })} */}
-<div style={{display:"flex" , flexDirection:"row" , justifyContent:"space-around", alignItems:"start"}}>
+<div className=" flex flex-col md:flex-row items-center md:items-start" style={{ justifyContent:"space-around"}}>
 <div style={{marginTop:"0px",display:"flex" , flexDirection:"column" , justifyContent:"center" , height:"100vh"}}>
 <div style={{marginBottom:"80px"}}>
-<h2 className="font-bold leading-[40px]" style={{width:"350px", fontSize:"35px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-            <p className="mt-4 mb-2" style={{width:"400px"}}>orem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae lorem nec urna faucibus bibendum. Nam scelerisque, orci ac vehicula malesuada, justo elit blandit velit, nec gravida risus </p>
-    <div> 
+<h2 className="font-bold leading-[40px] text-center md:text-start" style={{width:"98%",maxWidth:"350px", fontSize:"35px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            <p className="mt-4 mb-2 text-center md:text-start" style={{width:"98%", maxWidth:"400px" , marginTop:"20px"}}>orem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae lorem nec urna faucibus bibendum. Nam scelerisque, orci ac vehicula malesuada, justo elit blandit velit, nec gravida risus </p>
+    <div className="flex flex-row justify-center md:justify-start" style={{marginTop:"20px"}}> 
     <button style={{background:"rgb(10 168 167 / var(--tw-text-opacity))" , color:"white", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
         همکاری با ما        
         </button>
@@ -124,26 +124,26 @@ const Home = ({ frontmatter }) => {
         </div>
 </div>
 <div>
-<div style={{width:"100%" , height:"0.05px" , background:"black" , marginBottom:"30px"}}></div>
+<div style={{width:"100%" , height:"0.05px" , background:"black" , marginBottom:"10px"}}></div>
  
-  <div style={{display:"flex" , flexDirection:"row" , justifyContent:"space-between"}}>
-    <p className="font-bold leading-[40px]" style={{fontSize:"25px"}} >
+  <div className="flex flex-col md:flex-row  mb-10 md:mb-0" style={{justifyContent:"space-between"}}>
+    <p className="font-bold leading-[40px] text-center md:text-start" style={{fontSize:"25px"}} >
       محصولات پرطرفدار
     </p>
     <div>
-      <div style={{paddingRight:"70px" , marginBottom:"20px"}}>
-      <button style={{color:"white" , marginInline:"20px" , background:"#1C1678", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
+      <div className="flex flex-col md:flex-row pr-0 md:pr-16" style={{ marginBottom:"20px"}}>
+      <button className="mx-5" style={{color:"white"  , background:"#1C1678", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
         همکاری با ما        
         </button>
-        <button style={{color:"white" , background:"#7BC9FF", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
+        <button className="mx-5 md:mx-0 mt-5 md:mt-0" style={{color:"white" , background:"#7BC9FF", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
         همکاری با ما        
         </button>
       </div>
-      <div>
-      <button style={{color:"snow" ,marginInline:"20px", background:"#A3FFD6", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
+      <div className="flex flex-col md:flex-row" >
+      <button className=" mx-5" style={{color:"snow" , background:"#A3FFD6", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
         همکاری با ما        
         </button>
-        <button style={{color:"white" , background:"#8576FF", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
+        <button className="mx-5 md:mx-0 mt-5 md:mt-0" style={{color:"white" , background:"#8576FF", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
         همکاری با ما        
         </button>
       </div>
@@ -154,10 +154,10 @@ const Home = ({ frontmatter }) => {
 
   </div>
   <div style={{display:"flex" , flexDirection:"column" , justifyContent:"flex-start" , alignItems:"center"}}>
-    <Image style={{maxWidth:"600px" , height:"350px" ,  borderRadius:"13px",  border:"black solid 3px"}} src={pic1} />
-    <div style={{display:"flex" , flexDirection:"row" , justifyContent:"space-between" , alignItems:"center" , width:"600px" , margin:"10px"}}>
-    <Image style={{maxWidth:"290px" , height:"400px" , borderRadius:"13px" , border:"black solid 3px"}} src={pic1} />
-    <Image style={{maxWidth:"290px" , height:"400px" , borderRadius:"13px" , border:"black solid 3px"}}    src={pic1}/>
+    <Image style={{width:"90%", maxWidth:"600px" , height:"350px" ,  borderRadius:"13px",  border:"black solid 3px"}} src={pic1} />
+    <div className=" justify-around md:justify-between" style={{display:"flex" , flexDirection:"row" , alignItems:"center" , width:"100%", maxWidth:"600px" , margin:"10px"}}>
+    <Image style={{ width:"48%", maxWidth:"290px" , height:"400px" , borderRadius:"13px" , border:"black solid 3px"}} src={pic1} />
+    <Image style={{width:"48%",maxWidth:"290px" , height:"400px" , borderRadius:"13px" , border:"black solid 3px"}}    src={pic1}/>
     </div>
   </div>
 </div>
