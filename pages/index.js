@@ -3,11 +3,14 @@ import Base from "@layouts/Baseof";
 import Cta from "@layouts/components/Cta";
 import { markdownify } from "@lib/utils/textConverter";
 import Image from "next/image";
+import pic1 from "../public/images/blog-1.jpg"
 import Link from "next/link";
 import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import { getListPage } from "../lib/contentParser";
+
+import { useEffect, useRef, useState } from "react";
 
 const Home = ({ frontmatter }) => {
   const { banner, feature, services, workflow, call_to_action } = frontmatter;
@@ -43,65 +46,8 @@ const Home = ({ frontmatter }) => {
           </div>
         </div>
       </section> */}
-      <div id="cloud_body">
-      <div id="background-wrap">
-    <div class="x1">
-        <div class="cloud"></div>
-    </div>
-    <div class="x2">
-        <div class="cloud"></div>
-    </div>
-    <div class="x3">
-        <div class="cloud"></div>
-    </div>
-
-    <div class="x4">
-        <div class="cloud"></div>
-    </div>
-
-    <div class="x5">
-        <div class="cloud"></div>
-    </div>
-</div>
- <div className="row text-center" style={{position:"absolute", top:"50%", left:"30%", width:"700px", color:"snow" , zIndex:"0"}}>
-            <div className="mx-auto lg:col-10">
-              <h1 className="font-primary font-bold" style={{fontSize:"64px", zIndex:"-2" , color:"snow"}}>{banner.title}</h1>
-              <p className="mt-4" style={{fontSize:"18px"}}>{markdownify(banner.content)}</p>
-      </div>
-      </div>
-      </div>
-
       {/* Features */}
-      {/* <section className="section bg-theme-light">
-        <div className="container">
-          <div className="text-center">
-            <h2>{markdownify(feature.title)}</h2>
-          </div>
-          <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
-            {feature.features.map((item, i) => (
-              <div
-                className="feature-card rounded-xl bg-white p-5 pb-8 text-center"
-                key={`feature-${i}`}
-              >
-                {item.icon && (
-                  <Image
-                    className="mx-auto"
-                    src={item.icon}
-                    width={30}
-                    height={30}
-                    alt=""
-                  />
-                )}
-                <div className="mt-4">
-                  {markdownify(item.name, "h3", "h5")}
-                  <p className="mt-3">{item.content}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
+ 
       {/* services */}
       {/* {services.map((service, index) => {
   const isOdd = index % 2 > 0;
@@ -163,23 +109,135 @@ const Home = ({ frontmatter }) => {
     </section>
   );
 })} */}
-      {/* workflow */}
-      {/* <section className="section pb-0">
-        <div className="mb-8 text-center">
-          {markdownify(
-            workflow.title,
-            "h2",
-            "mx-auto max-w-[400px] font-bold leading-[44px]"
-          )}
-          {markdownify(workflow.description, "p", "mt-3")}
+<div style={{display:"flex" , flexDirection:"row" , justifyContent:"space-around", alignItems:"start"}}>
+<div style={{marginTop:"140px",display:"flex" , flexDirection:"column" , justifyContent:"space-between" , height:"100vh"}}>
+<div>
+<h2 className="font-bold leading-[40px]" style={{width:"350px", fontSize:"35px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            <p className="mt-4 mb-2" style={{width:"400px"}}>orem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae lorem nec urna faucibus bibendum. Nam scelerisque, orci ac vehicula malesuada, justo elit blandit velit, nec gravida risus </p>
+    <div> 
+    <button style={{background:"rgb(10 168 167 / var(--tw-text-opacity))" , color:"white", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
+        همکاری با ما        
+        </button>
+        <button style={{color:"rgb(10 168 167 / var(--tw-text-opacity))" , background:"white", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
+        همکاری با ما        
+        </button>
         </div>
+</div>
+  <div style={{width:"100%" , height:"0.05px" , background:"black"}}></div>
+ 
+  <div style={{display:"flex" , flexDirection:"row" , justifyContent:"space-between"}}>
+    <p className="font-bold leading-[40px]" style={{fontSize:"25px"}} >
+      محصولات پرطرفدار
+    </p>
+    <div>
+      <div style={{paddingRight:"70px" , marginBottom:"20px"}}>
+      <button style={{color:"white" , background:"#1C1678", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
+        همکاری با ما        
+        </button>
+        <button style={{color:"white" , background:"#7BC9FF", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
+        همکاری با ما        
+        </button>
+      </div>
+      <div>
+      <button style={{color:"snow" , background:"#A3FFD6", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
+        همکاری با ما        
+        </button>
+        <button style={{color:"white" , background:"#8576FF", borderRadius:"15px" , paddingInline:"45px", paddingBlock:"20px"}}>
+        همکاری با ما        
+        </button>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div style={{display:"flex" , flexDirection:"column" , justifyContent:"flex-start" , alignItems:"center"}}>
+    <Image style={{maxWidth:"600px" , height:"400px" ,  borderRadius:"13px",  border:"black solid 3px"}} src={pic1} />
+    <div style={{display:"flex" , flexDirection:"row" , justifyContent:"space-between" , alignItems:"center" , width:"600px" , margin:"20px"}}>
+    <Image style={{maxWidth:"260px" , height:"400px" , borderRadius:"13px" , border:"black solid 3px"}} src={pic1} />
+    <Image style={{maxWidth:"260px" , height:"400px" , borderRadius:"13px" , border:"black solid 3px"}}    src={pic1}/>
+    </div>
+  </div>
+</div>
+<div id="cloud_body">
+<div className="section" style={{background:" rgb(10 168 167 / var(--tw-text-opacity))"}}>
+        <div className="container">
+          <div className="text-center">
+            <h2 style={{color:"white"}}>{markdownify(feature.title)}</h2>
+          </div>
+          <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+            {feature.features.map((item, i) => (
+              <div
+                className="feature-card rounded-xl p-5 pb-8 text-center bg-white"
+                key={`feature-${i}`}
+              >
+                {item.icon && (
+                  <Image
+                    className="mx-auto"
+                    src={item.icon}
+                    width={30}
+                    height={30}
+                    alt=""
+                  />
+                )}
+                <div className="mt-4">
+                  {markdownify(item.name, "h3", "h5")}
+                  <p className="mt-3">{item.content}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div id="background-wrap">
+    <div class="x1">
+        <div class="cloud"></div>
+    </div>
+    <div class="x2">
+        <div class="cloud"></div>
+    </div>
+    {/* <div class="x3">
+        <div class="cloud"></div>
+    </div>
+
+    <div class="x4">
+        <div class="cloud"></div>
+    </div>
+
+    <div class="x5">
+        <div class="cloud"></div>
+    </div> */}
+</div>
+ {/* <div className="row text-center" style={{position:"absolute", top:"50%", left:"30%", width:"700px", color:"snow" , zIndex:"0"}}>
+            <div className="mx-auto lg:col-10">
+              <h1 className="font-primary font-bold" style={{fontSize:"64px", zIndex:"-2" , color:"snow"}}>{banner.title}</h1>
+              <p className="mt-4" style={{fontSize:"18px"}}>{markdownify(banner.content)}</p>
+      </div>
+      </div> */}
+      </div>
+
+      {/* workflow */}
+      <section className="section pb-0">
+        {/* <div className="mb-8 text-center">
+          <div>
+            <p>حهت دریافت مشاوره</p>
+      <div class="md:w-1/3">
+      <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+        Full Name
+      </label>
+    </div>
+    <div class="md:  w-1/12">
+      <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="Jane Doe"/>
+    </div>
+          </div>
+        </div> */}
         <Image
           src={workflow.image}
           alt="workflow image"
           width={1920}
           height={296}
         />
-      </section> */}
+      </section>
 
       {/* Cta */}
       {/* <Cta cta={call_to_action} /> */}

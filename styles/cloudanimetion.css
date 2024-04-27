@@ -2,7 +2,7 @@
 	background: rgb(10 168 167 / var(--tw-text-opacity));
 	color: #333;
 	font: 100% Arial, Sans Serif;
-	height: 100vh;
+	height: 104vh;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -25,7 +25,7 @@
 
 @-webkit-keyframes animateCloud {
     0% {
-        margin-left: -300%;
+        margin-left: -500%;
     }
     100% {
         margin-left: 100%;
@@ -34,7 +34,7 @@
 
 @-moz-keyframes animateCloud {
     0% {
-        margin-left: -300%;
+        margin-left: -500%;
     }
     100% {
         margin-left: 100%;
@@ -43,7 +43,7 @@
 
 @keyframes animateCloud {
     0% {
-        margin-left: -300%;
+        margin-left: -500%;
     }
     100% {
         margin-left: 100%;
